@@ -32,6 +32,7 @@ header > .container{
 
 .logo-header{
     width: 30%;
+    margin-top: 10px;
 }
 
 .logo-header img{
@@ -123,7 +124,7 @@ section.perfil-descricao{
 }
 
 .nome-perfil span{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: lighter;
 }
 
@@ -152,11 +153,14 @@ section.perfil-descricao{
 
 .descricao-perfil{
     margin-top: 10px;
+    width: 50%;
+    float: right;
 }
 
 .descricao-perfil h4{
     color: #ccc;
     font-weight: lighter;
+    display: inline-block;
 }
 
 .descricao-perfil span{
@@ -214,16 +218,94 @@ section.feed{
     border: 4px solid rgb(235,235,235);
 }
 
-#igtv{
+#igtv, #salvos{
     display: none;
 }
 
 @media screen and (max-width: 768px){
-    .search-box{
+
+    .logo-header{
+        width: 25%;
+    }
+
+    .search-box,.info-one{
         display: none;
     }
 
     .notifications-icons{
         padding-top: 0px;
+    }
+
+    .img-perfil-wraper{
+        position: relative;
+        top: 0;
+        left: -50px;
+    }
+
+    
+    .img-perfil{
+        width: 60%;
+        padding-top: 60%;
+    }
+
+    .notifications-icons{
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: right;
+    }
+
+    .img-miniatura{
+        top: 0px !important;
+    }
+
+    .notifications-icons a > i{
+        margin-top:  0px;
+        margin-right: 20px;
+    }
+
+    .texto-perfil{
+        left: -100px;
+    }
+
+    .nome-perfil a.btn-primary{
+        display: inline-block;
+        color: #000;
+        border: 1px solid #dbdbdb;
+        padding: 4px 2px;
+        width: 120%;
+        text-align: center;
+        position: relative;
+        left: -20px;
+        font-size: 16px;
+        margin: 5px 8px;
+        border-radius: 3px;
+    }
+
+    .nome-perfil a:not(.btn-primary){
+        color: #000;
+        font-size: 22px;
+        position: absolute;
+        top: 0;
+        right: -25px;
+    }
+
+    .descricao-perfil{
+        float: none;
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 668px){
+    .descricao-perfil{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .descricao-perfil{
+        width: 70%;
     }
 }
