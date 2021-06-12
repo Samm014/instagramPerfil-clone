@@ -251,13 +251,14 @@ section.feed{
     .notifications-icons{
         width: 60%;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: center;
         text-align: right;
     }
 
     .img-miniatura{
         top: 0px !important;
+        min-width: 30px;
     }
 
     .notifications-icons a > i{
@@ -307,5 +308,15 @@ section.feed{
 @media screen and (max-width: 500px){
     .descricao-perfil{
         width: 70%;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .notifications-icons{
+        position: absolute;
+        right: 0;
+        top: 12px;
     }
 }
