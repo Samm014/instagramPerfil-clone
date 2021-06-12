@@ -198,9 +198,25 @@ section.feed{
     top: -11px;
 }
 
+.line-igtv{
+    width: 40px;
+}
 
+.line-salvos{
+    width: 125px;
+}
 
+.publicacao-single{
+    float: left;
+    width: 33.3%;
+    padding-top: 33.3%;
+    background-size: cover;
+    border: 4px solid #fff;
+}
 
+#igtv{
+    display: none;
+}
 
 @media screen and (max-width: 768px){
     .search-box{
